@@ -13,14 +13,14 @@ function App() {
     // Add a switch statement that will return the appropriate component of the 'currentPage'
     // YOUR CODE HERE
     switch(currentPage){
-      case "ContactForm":
-        return <ContactForm/>
+      case "About":
+        return <About/>
       case "Resume": 
         return <Resume/>
       case "Portfolio":
         return <Portfolio/>
       default: 
-        return <About/>
+        return <ContactForm/>
     }
   };
 
