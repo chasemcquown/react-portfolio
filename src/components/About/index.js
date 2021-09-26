@@ -22,7 +22,7 @@ function About() {
       </div>
       <br/>
       <br/>
-          <p>Welcome! My name is Chase McQuown, and I'm currently a student of the coding bootcamp at UT Austin. I reside in Huntington Beach, CA and love skateboarding, fishing, snowboarding, hiking, camping, the ocean, and everything outdoors</p>
+          <p>Welcome! My name is Chase McQuown, and I'm currently a student of the coding bootcamp at UT Austin. I reside in Huntington Beach, CA and love skateboarding, fishing, snowboarding, hiking, camping, the ocean, and all things outdoors. I also have a newly discovered love/hate relationship with coding.</p>
         </section>
     );
 };

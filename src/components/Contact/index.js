@@ -47,29 +47,34 @@ function ContactForm() {
     //JSX
     return (
         <section>
-          <h4>Contact me</h4>
-          <form id="contact-form" onSubmit={handleSubmit}>
-            <div>
-              <label htmlFor="name">Name:</label>
-              {/* NOTE: we can use the onBlur attribute instead of onChange. The onBlur attribute will fire the event once the user has changed focus from the input field, thus allowing the user to finish their entry before validating their input*/}
-              <input type="text" defaultValue={name} onBlur={handleChange} name="name" />
-            </div>
-            <div>
-              <label htmlFor="email">Email address:</label>
-              <input type="email" defaultValue={email} onBlur={handleChange}  name="email" />
-            </div>
-            <div>
-              <label htmlFor="message">Message:</label>
-              <textarea name="message" defaultValue={message} onBlur={handleChange} rows="5" />
-            </div>
-            {/* NOTE: If errorMessage has a truthy value, the <div> block will render. If errorMessage doesn't have an error message, the following <div> block doesn't render. The && operator—known as the AND operator—is being used here as a short circuit. If the first value resolves to true, the second expression is evaluated  */}
-            {errorMessage && (
+          <div  id="my-applications" class="contact-style">
+            <h4>Contact me!</h4>
+            <br/>
+            <form id="contact-form" onSubmit={handleSubmit}>
                 <div>
-                    <p classsName="error-text">{errorMessage}</p>
+                <label htmlFor="name">Name:</label>
+                {/* NOTE: we can use the onBlur attribute instead of onChange. The onBlur attribute will fire the event once the user has changed focus from the input field, thus allowing the user to finish their entry before validating their input*/}
+                <input type="text" defaultValue={name} onBlur={handleChange} name="name" />
                 </div>
-            )}
-            <button type="submit">Submit</button>
-          </form>
+                <br/>
+                <div>
+                <label htmlFor="email">Email address:</label>
+                <input type="email" defaultValue={email} onBlur={handleChange}  name="email" />
+                </div>
+                <br/>
+                <div>
+                <label htmlFor="message">Message:</label>
+                <textarea name="message" defaultValue={message} onBlur={handleChange} rows="5" />
+                </div>
+                {/* NOTE: If errorMessage has a truthy value, the <div> block will render. If errorMessage doesn't have an error message, the following <div> block doesn't render. The && operator—known as the AND operator—is being used here as a short circuit. If the first value resolves to true, the second expression is evaluated  */}
+                {errorMessage && (
+                    <div>
+                        <p classsName="error-text">{errorMessage}</p>
+                    </div>
+                )}
+                <button type="submit">Submit</button>
+            </form>
+          </div>
         </section>
     );
 
