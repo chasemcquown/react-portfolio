@@ -15,7 +15,7 @@ A portfolio built using React to display my deployed applications.
 
 ## Website
 
-https://chasemcquown.github.io/chase-mcquown-portfolio/
+https://chasemcquown.github.io/react-portfolio/
 
 ## Contribution
 
