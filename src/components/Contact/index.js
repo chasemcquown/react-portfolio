@@ -47,7 +47,7 @@ function ContactForm() {
     //JSX
     return (
         <section>
-          <h1>Contact me</h1>
+          <h4>Contact me</h4>
           <form id="contact-form" onSubmit={handleSubmit}>
             <div>
               <label htmlFor="name">Name:</label>

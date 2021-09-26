@@ -20,6 +20,8 @@ function About() {
           <img src={mammoth} alt="Trees and clouds from Devil's Post Pile in Mammoth Lakes, CA" />
         </div>
       </div>
+      <br/>
+      <br/>
           <p>Welcome! My name is Chase McQuown, and I'm currently a student of the coding bootcamp at UT Austin. I reside in Huntington Beach, CA and love skateboarding, fishing, snowboarding, hiking, camping, the ocean, and everything outdoors</p>
         </section>
     );
